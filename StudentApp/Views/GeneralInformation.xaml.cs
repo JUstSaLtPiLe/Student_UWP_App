@@ -38,7 +38,7 @@ namespace StudentApp.Views
             var file = await ApplicationData.Current.LocalFolder.TryGetItemAsync("token.txt");
             if (file != null)
             {
-                var response = await APIHandle.Get_Member_Infor();
+                var response = await APIHandle.Get_Student_Infor();
                 var responseContent = await response.Content.ReadAsStringAsync();
 
                 Entities.GeneralInformation genInfo = JsonConvert.DeserializeObject<Entities.GeneralInformation>(responseContent);

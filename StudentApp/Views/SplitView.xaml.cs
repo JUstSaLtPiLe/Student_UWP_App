@@ -29,7 +29,7 @@ namespace StudentApp.Views
 
         public void OnActiveAsync(object sender, RoutedEventArgs e)
         {
-            this.MainFrame.Navigate(typeof(Views.SongList));
+            this.MainFrame.Navigate(typeof(Views.ListClazz));
         }
 
 
@@ -58,13 +58,10 @@ namespace StudentApp.Views
                     this.search_box.Focus(FocusState.Programmatic);
                     break;
                 case "Home":
-                    this.MainFrame.Navigate(typeof(Views.SongList));
+                    this.MainFrame.Navigate(typeof(Views.ListClazz));
                     break;
                 case "Account":
-                    this.MainFrame.Navigate(typeof(UserInfo));
-                    break;
-                case "CreateSong":
-                    this.MainFrame.Navigate(typeof(Views.SongForm));
+                    this.MainFrame.Navigate(typeof(GeneralInformation));
                     break;
                 default:
                     break;

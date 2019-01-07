@@ -123,6 +123,7 @@
     <Compile Include="Entities\Clazz.cs" />
     <Compile Include="Entities\ErrorResponse.cs" />
     <Compile Include="Entities\GeneralInformation.cs" />
+    <Compile Include="Entities\Grade.cs" />
     <Compile Include="Entities\Subject.cs" />
     <Compile Include="Entities\TokenResponse.cs" />
     <Compile Include="MainPage.xaml.cs">

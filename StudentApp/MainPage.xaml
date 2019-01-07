@@ -9,6 +9,21 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        <StackPanel Loaded="LoginForm_Loaded" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="30">
+            <TextBlock Text="APTECH Student Management" FontSize="54" Margin="30"/>
+            <TextBox x:Name="RollNumber" Header="Roll Number" Width="500" />
+            <TextBlock x:Name="rollNumber" Foreground="Red" Visibility="Collapsed"/>
+            <PasswordBox x:Name="Password" Header="Password" Width="500"/>
+            <TextBlock x:Name="password" Foreground="Red" Visibility="Collapsed"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="BtnLogin" Margin="0, 30, 0, 0" Content="Login" Click="BtnLogin_Click" Width="100"/>
+            </StackPanel>
+        </StackPanel>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="DarkOrange" Offset="0"/>
+                <GradientStop Color="DarkBlue" Offset="2"/>
+            </LinearGradientBrush>
+        </Grid.Background>
     </Grid>
 </Page>
